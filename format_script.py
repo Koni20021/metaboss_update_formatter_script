@@ -22,7 +22,7 @@ for file in os.listdir("mints_data"):
       dataOutput = {
         "mint_account": mintId,
         "uri": dataCache["items"][c]["metadata_link"]
-      },
+      }
 
       with open("output/" + fileData["name"] + ".json", "w") as f:
         json.dump(dataOutput, f)
